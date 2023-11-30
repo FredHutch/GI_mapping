@@ -1,6 +1,8 @@
 # GI_mapping
 
-This repository takes paired guide RNA counts data and calculates Genetic Interaction (GI) scores
+This repository takes paired guide RNA counts data and calculates Genetic Interaction (GI) scores. It also performs some QC and filtering along the way.
+
+### How it can be run
 
 The entire analysis can be re-run on the Fred Hutch clusters if this repository is cloned there and ran from the Berger lab folders using the `run_pipeline.sh` script.
 
@@ -55,7 +57,7 @@ This Rmd calculates log fold change and makes heatmaps
   - Investigates correlations across replicates
   - How log fold changed is normalized:
     - `Take LFC, then subtract median of negative controls. This will result in the median of the nontargeting being set to 0. Then, divide by the median of negative controls (double non-targeting) minus median of positive controls (targeting 1 essential gene). This will effectively set the median of the positive controls (essential genes) to -1.`
-    - `Since the pgPEN library uses non-targeting controls, we adjusted for the fact that single-targeting pgRNAs generate only two double-strand breaks (1 per allele), whereas the double-targeting pgRNAs generate four DSBs. To do this, we set the median (adjusted) LFC for unexpressed genes of each group to zero.` 
+    - `Since the pgPEN library uses non-targeting controls, we adjusted for the fact that single-targeting pgRNAs generate only two double-strand breaks (1 per allele), whereas the double-targeting pgRNAs generate four DSBs. To do this, we set the median (adjusted) LFC for unexpressed genes of each group to zero.`
   - Does different handling for single level targeting versus double level targeting
   - Calculates target level values
 
