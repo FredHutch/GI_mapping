@@ -4,13 +4,10 @@
 Please provide a brief description of the issue here.
 
 ### Inputs
-Please describe the following:
-* Experimental/sequencing strategy (e.g. pgPEN library and screening data, sequenced with an Illumina MiSeq, etc.)
-* 
+Please describe your experimental/sequencing strategy (e.g. pgPEN library and screening data, sequenced with an Illumina MiSeq, etc.)
 
 ### Your environment
-Describe the following:
-* How you ran the pipeline (e.g. high-performance computing (HPC) cluster, linux/shell interface (Ubuntu, MacOS terminal, Windows powershell, etc.)
+Describe how you ran the pipeline (e.g. high-performance computing [HPC] cluster, linux/shell interface (Ubuntu, MacOS terminal, Windows powershell, etc.)
 
 ### Steps to reproduce
 Please include relevant commands and steps taken. If your counts table was generated outside of the Berger Lab's pgPEN analysis workflow, please also describe the steps taken to pre-process your data. 
