@@ -1,19 +1,19 @@
 <!-- Inspiration from https://github.com/angular-translate/angular-translate/blob/master/.github/ISSUE_TEMPLATE.md --> 
 
 ### Issue Description 
-
 Please provide a brief description of the issue here.
 
+### Inputs
+Please describe the following:
+* Experimental/sequencing strategy (e.g. pgPEN library and screening data, sequenced with an Illumina MiSeq, etc.)
+* 
+
 ### Your environment
-List the following:
-* version numbers
-* OS
+Describe the following:
+* How you ran the pipeline (e.g. high-performance computing (HPC) cluster, linux/shell interface (Ubuntu, MacOS terminal, Windows powershell, etc.)
 
 ### Steps to reproduce
-Please include relevant commands and steps taken.
+Please include relevant commands and steps taken. If your counts table was generated outside of the Berger Lab's pgPEN analysis workflow, please also describe the steps taken to pre-process your data. 
 
-### Expected behaviour
-Tell us what should have happened.
-
-### Actual behaviour
-Tell us what happens instead. Include relevant screenshots or codeblocks with your error messages.
+### Pipeline behavior and error messages
+Please include relevant screenshots or codeblocks with any relevant error messages. If your code ran up to a certain point before encountering an error, please include this information as well.
