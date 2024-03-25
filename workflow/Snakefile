@@ -61,7 +61,7 @@ rule pgRNA_counts_QC:
     conda:
         "envs/pgRNA_counts_QC.yaml"
     params:
-        script = "workflow/scripts/pgRNA_counts_QC.Rmd",
+        script = "workflow/scripts/01-pgRNA_counts_QC.Rmd",
         base_dir = config["base_dir"],
         out_dir = pgRNA_counts_QC_dir,
         out_dir_for_R = "results/pgRNA_counts_QC",
@@ -91,7 +91,7 @@ rule get_pgRNA_annotations:
     conda:
         "envs/get_pgRNA_annotations.yaml"
     params:
-        script = "workflow/scripts/get_pgRNA_annotations.Rmd",
+        script = "workflow/scripts/02-get_pgRNA_annotations.Rmd",
         base_dir = config["base_dir"],
         out_dir = "results/pgRNA_annotations",
         report = config["base_sample_name"] + "_{cell_line}_get_pgRNA_annotations.html"
@@ -121,7 +121,7 @@ rule calculate_LFC:
     conda:
         "envs/LFC_and_GI_calcs.yaml"
     params:
-        script = "workflow/scripts/filter_and_calculate_LFC.Rmd",
+        script = "workflow/scripts/03-filter_and_calculate_LFC.Rmd",
         base_dir = config["base_dir"],
         out_dir = "results/calculate_LFC",
         report = config["base_sample_name"] + "_{cell_line}_filter_and_calculate_LFC.html"
@@ -150,7 +150,7 @@ rule calculate_GI_scores:
     conda:
         "envs/LFC_and_GI_calcs.yaml"
     params:
-        script = "workflow/scripts/calculate_GI_scores.Rmd",
+        script = "workflow/scripts/04-calculate_GI_scores.Rmd",
         base_dir = config["base_dir"],
         out_dir = "results/calculate_GI_scores",
         report = config["base_sample_name"] + "_{cell_line}_calculate_GI_scores.html"
